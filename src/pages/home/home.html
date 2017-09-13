@@ -10,7 +10,7 @@
   <!-- The world is your oyster.
   <p> If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide. </p> -->
   
-  <ion-list>
+  <!-- <ion-list>
       <ion-item>
         <ion-label floating>Username</ion-label>
         <ion-input type="text" #username></ion-input>
@@ -20,13 +20,12 @@
         <ion-label floating>Password</ion-label>
         <ion-input type="password" #userpassword></ion-input>
       </ion-item>
+    </ion-list> -->
     
-    </ion-list>
-    
-    <div padding class="top-buttons">
-      <button block ion-button (click)="signIn()">Sign In</button>
+    <div class="top-buttons">
+      <button ion-button item-left (click)="signIn()">Sign In</button>
 
-      <button block ion-button (click)="register()">Register</button>
+      <button ion-button item-left (click)="register()">Register</button>
     </div>
 
 
