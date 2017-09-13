@@ -15,7 +15,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 //import { AboutPage } from '../pages/about/about';
 
-const FirebaseAuth = {  
+const firebaseAuth = {  
     apiKey: "AIzaSyCRK13ipCkjrzARJ6SnAmRBpvAlJJfSB7M",
     authDomain: "socialapp-b1682.firebaseapp.com",
     databaseURL: "https://socialapp-b1682.firebaseio.com",
@@ -33,8 +33,8 @@ const FirebaseAuth = {
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FirebaseAuth)
-  
+    AngularFireModule.initializeApp(firebaseAuth),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
