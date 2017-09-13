@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { AboutPage } from '../about/about';
-
+//import { AboutPage } from '../about/about';
 
 @Component({
   selector: 'page-home',
@@ -11,13 +10,21 @@ import { AboutPage } from '../about/about';
 
 export class HomePage {
 
+  @ViewChild('username') uname;
+  @ViewChild('userpassword') password;
+
   constructor(public navCtrl: NavController) {
 
   }
 
-  openPage(){
-    this.navCtrl.push(AboutPage);
-    
+  // openPage(){
+  //   this.navCtrl.push(AboutPage);    
+  // }
+
+  signIn(){
+    console.log(this.uname.value, this.password.value);
+
   }
+
 
 }
