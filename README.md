@@ -1,4 +1,6 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+
+## Social Network App using Ionic 3 & Angular 4
+<!-- This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
 
@@ -22,5 +24,5 @@ $ ionic cordova platform add ios
 $ ionic cordova run ios
 ```
 
-Substitute ios for android if not on a Mac.
+Substitute ios for android if not on a Mac. -->
 
