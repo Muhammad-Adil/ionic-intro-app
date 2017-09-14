@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-//import { environment } from '../environments/environment';
+
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -15,7 +15,8 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 //import { AboutPage } from '../pages/about/about';
 
-const firebaseAuth = {  
+//export 
+  const firebaseAuth = {  
     apiKey: "AIzaSyCRK13ipCkjrzARJ6SnAmRBpvAlJJfSB7M",
     authDomain: "socialapp-b1682.firebaseapp.com",
     databaseURL: "https://socialapp-b1682.firebaseio.com",

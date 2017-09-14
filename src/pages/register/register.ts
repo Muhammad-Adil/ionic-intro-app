@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 
 /**
@@ -18,7 +18,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 })
 export class RegisterPage {
 
-  @ViewChild('username') name;
+  @ViewChild('useremail') userEmail;
   @ViewChild('userpassword') password;
 
   constructor(private afAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
@@ -28,17 +28,16 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
 
+
   registerUser(){
-    this.afAuth.auth.createUserWithEmailAndPassword(this.user.value, this.email.value)
+    this.afAuth.auth.createUserWithEmailAndPassword(this.userEmail.value, this.password.value)    
     .then(data => {
       console.log('got data', data);
     })
     .catch( error => {
       console.log('got an error' , error );
     });
-    // console.log(this.name.value, this.password.value);
+    console.log(this.userEmail.value, this.password.value);
   }
-
-
 
 }
