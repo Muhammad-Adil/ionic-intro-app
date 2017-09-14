@@ -12,12 +12,19 @@ import { RegisterPage } from '../register/register';
 })
 
 export class HomePage {
+  splash = true;
+  secondPage = HomePage;
+
 
   @ViewChild('username') uname;
   @ViewChild('userpassword') password;
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  ionViewDidLoad() {
+    setTimeout(() => this.splash = false, 4000);
   }
 
   // openPage(){
@@ -31,7 +38,6 @@ export class HomePage {
 
   register(){
     this.navCtrl.push(RegisterPage);
-
   }
 
 }
