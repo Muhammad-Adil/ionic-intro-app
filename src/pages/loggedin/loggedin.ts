@@ -17,11 +17,12 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class LoggedinPage {
     email: string ;
-
+    username : string ;
 
   constructor( private afAuth: AngularFireAuth , public navCtrl: NavController, public navParams: NavParams) {
   
       this.email = afAuth.auth.currentUser.email;
+      this.username = afAuth.auth.currentUser.displayName;
   }
 
   ionViewDidLoad() {
