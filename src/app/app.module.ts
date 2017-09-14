@@ -13,6 +13,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { LoggedinPage } from '../pages/loggedin/loggedin';
 //import { AboutPage } from '../pages/about/about';
 
 //export 
@@ -28,7 +29,7 @@ import { RegisterPage } from '../pages/register/register';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage, LoginPage, RegisterPage
+    HomePage, LoginPage, RegisterPage, LoggedinPage
     //, AboutPage
   ],
   imports: [
@@ -40,7 +41,7 @@ import { RegisterPage } from '../pages/register/register';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage, LoginPage, RegisterPage
+    HomePage, LoginPage, RegisterPage, LoggedinPage
     //, AboutPage
   ],
   providers: [

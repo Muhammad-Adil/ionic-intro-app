@@ -2,7 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 import { AngularFireAuth } from 'angularfire2/auth';
-import { LoggedInPage } from '../logged-in/logged-in' ;
+import { LoggedinPage } from '../loggedin/loggedin';
+
 
 /**
  * Generated class for the LoginPage page.
@@ -42,7 +43,7 @@ export class LoginPage {
       console.log('got data', this.afAuth.auth.currentUser);
       //user logged in
       this.alert('Success! you\'re logged in');
-      this.navCtrl.setRoot( LoggedInPage );
+      this.navCtrl.setRoot( LoggedinPage );
     })
     .catch( error => {
       console.log('got an error' , error );
