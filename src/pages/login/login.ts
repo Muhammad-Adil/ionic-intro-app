@@ -49,7 +49,6 @@ export class LoginPage {
       console.log('got an error' , error );
       this.alert(error.message);
     });
-
     console.log( this.name.value , this.password.value );
   }
 }
